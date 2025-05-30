@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Informe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-light py-4">
+  <div class="container d-flex justify-content-center align-items-center">
+    <img src="./src/Design sem nome (9).png"
+         alt="Logo The Informe"
+         style="height: 100px; max-width: 100%;">
+    <h1 class="ms-3" style="font-weight: bold; color: #56aee5;">
+      THE <span style="color: #f14928 ;">INFORME</span>
+    </h1>
+  </div>
+</header>
+
+  <section class="bg-warning text-dark py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">The informe : sua denúncia faz a diferença!</h2>
+      <p class="lead">
+        Este site foi criado para que você possa denunciar terrenos baldios, acúmulo de lixo, entulho e outros riscos à saúde e ao meio ambiente em sua comunidade.
+        Com sua participação, podemos tornar nossos bairros mais seguros, limpos e saudáveis.
+      </p>
+      <p class="mb-0">
+        Envie sua denúncia com fotos, localização e descrição — e ajude a transformar sua realidade.
+      </p>
+    </div>
+  </section>
+  
+
+  <div id="carrosselImagens" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./src/lixo (1).png" class="d-block w-100" alt="Imagem 1" style="height: 400px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="./src/Design sem nome (10).png" class="d-block w-100" alt="Imagem 2" style="height: 400px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="./src/Design sem nome (11).png" class="d-block w-100" alt="Imagem 3" style="height: 400px; object-fit: cover;">
+    </div>
+  </div>
+
+ 
+  <button class="carousel-control-prev" type="button" data-bs-target="#carrosselImagens" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carrosselImagens" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+  <section class="container my-5">
+    <h3 class="text-center mb-4">Como Funciona?</h3>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Identifique o local</h5>
+      </div>
+      <div class="col-md-4">
+        <h5>Preencha o formulário</h5>
+      </div>
+      <div class="col-md-4">
+        <h5>Acompanhe a resolução</h5>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container my-5">
+    <h3 class="text-center mb-4">Fazer Denúncia</h3>
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Nome">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Local do Terreno">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Descrição do Problema"></textarea>
+      </div>
+      <div class="mb-3">
+        <input type="file" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Enviar Denúncia</button>
+    </form>
+  </section>
+
+  
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Informações de Contato</h5>
+          <p>Email: contato@theinforme.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Início</a></li>
+            <li><a href="#" class="text-white">Fazer Denúncia</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>WhatsApp</h5>
+          <p>(86) 99999-9999</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var meuCarrossel = document.querySelector('#carrosselImagens');
+    var carousel = new bootstrap.Carousel(meuCarrossel, {
+      interval: 3000,   
+      ride: 'carousel'  
+    });
+  });
+</script>
+
+</body>
+</html>
